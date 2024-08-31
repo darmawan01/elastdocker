@@ -1,0 +1,32 @@
+======= Generating Elastic Stack Certificates =======
+=====================================================
+Clearing Old Certificates if exits...
+Generating CA Certificates...
+Generating Certificates...
+Unzipping Certifications...
+Applying Permissions...
+=====================================================
+SSL Certifications generation completed successfully.
+=====================================================
+make[1]: Leaving directory '/home/zero/nguli/ucc/elastdocker'
+make[1]: Entering directory '/home/zero/nguli/ucc/elastdocker'
+docker compose -f docker-compose.setup.yml run --rm keystore
+[+] Building 0.0s (0/0)                                                                                                                                                                                                                                                    docker:default
+[+] Building 0.0s (0/0)                                                                                                                                                                                                                                                    docker:default
+========== Creating Elasticsearch Keystore ==========
+=====================================================
+Setting bootstrap.password...
+Elastic Bootstrap Password is: changeme
+Generating Kibana Service Token...
+Kibana Service Token is: AAEAAWVsYXN0aWMva2liYW5hL2RlZmF1bHQ6RTg3VGg4RzFRRFd3dU9UbDJQTE8xZw
+Saving new elasticsearch.keystore
+Saving new service_tokens file
+======= Keystore setup completed successfully =======
+=====================================================
+Remember to restart the stack, or reload secure settings if changed settings are hot-reloadable.
+About Reloading Settings: https://www.elastic.co/guide/en/elasticsearch/reference/current/secure-settings.html#reloadable-secure-settings
+=====================================================
+Your 'elastic' user password is: changeme
+Your Kibana Service Token is: AAEAAWVsYXN0aWMva2liYW5hL2RlZmF1bHQ6RTg3VGg4RzFRRFd3dU9UbDJQTE8xZw
+=====================================================
+make[1]: Leaving directory '/home/zero/nguli/ucc/elastdocker'
